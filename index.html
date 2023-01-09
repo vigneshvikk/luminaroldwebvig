@@ -19,14 +19,75 @@
   #btorplmts{
     width: 154px;
   }
-  button{
+  .navbtn{
     border: 1px solid white ;
     background-color: white;
   }
-  button:hover{
-    color:#351057 ;
+  .navbtn:hover{
+    color:#480c80 ;
     background-color: white;
   }
+  #caroimg{
+    height: 550px;
+  
+  
+  }
+  #learnmore{
+    color: white;
+    background-color: #421071;
+    border: #421071 2px solid;
+    border-radius: 100px;
+    height: 52px;
+    width: 155px;
+  }
+  #learnmore:hover{
+    color: #421071;
+    background-color: white;
+  }
+ 
+  /* body{
+    background-color: #ECECEB ;
+  }  */
+  #carouselbtn{
+    color: white;
+    border-radius: 50px;
+    background-color: #421071;
+    height: 60px;
+    width: 190px;
+    border: none;
+  }
+  #boxshadow1:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
+    }
+  
+
+    #pytsmsbtn{
+      width: 150px;
+      height: 60px;
+      color: white;
+      background-color: #480c80;
+     
+    }
+    #pythonStMs:hover{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+
+    }
+    #vwalcors{
+      width: 190px;
+      height: 70px;
+      background-color: #421071;
+      color: white;
+      border-radius: 70px;
+      border: 2px solid  #421071;
+      margin-top: 100px;
+      margin-left: 600px;
+    }
+    #vwalcors:hover{
+      color: #461870;
+      background-color: white;
+    }
+
+ 
 </style>
 
 </head>
@@ -48,44 +109,312 @@
     </div>
 </div>
 
-<nav class="navbar navbar-expand-lg bg-white   ">
-    <div class="container   mt"   >
-      <a class="navbar-brand   ps-3"     href="#">    <img src="./lumimg/logo.png"   alt="">    </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-lg bg-white   ">
+      <div class="container   mt"   >
+        <a class="navbar-brand   ps-3"     href="#">    <img src="./lumimg/logo.png"   alt="">    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent"   style="padding-left: 392px;"    >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+  
+  
+  
+              <li class="nav-item    ">
+                  <HOME class="nav-link text-dark "      href="#" > <button class="navbtn">HOME</button> </a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link  text-dark " aria-current="page" href="#"><button class="navbtn" >ABOUT</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-dark  " href="#"><button  class="navbtn">COURSES</button  class="navbtn"></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-dark " href="#"><button id="btorplmts"  class="navbtn">OUR PLACEMENTS</button></a>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link   text-dark " aria-current="page" href="#"><button  class="navbtn" >GALLERY</button></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-dark" href="#"><button class="navbtn" >CONTACTS</button></a>
+        </li>
+            
+          
+          </ul>
+          
+        </div>
+      </div>
+      </nav>
+</div>
+
+    <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="true">
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active"  data-bs-interval="3000">
+          <img src="./lumimg/caroucel2.jpg" class="d-block w-100" alt="..." id="caroimg" >
+          <div class="carousel-caption d-none d-md-block " style="text-align: left;">
+<h1>
+                  <p style="font-size: 60px;">Kerala's No.1 IT Finishing School  <br> 100% Placement Assistance</p> 
+
+</h1>  
+               <br><br>
+            <p>We at LUMINAR TECHNOLAB  offers best software training and placement in <br> emerging technology like BIG DATA, Data science,Machine learning,PYTHON, <br> Software Testing. </p>
+              <br> <br> 
+            <button id="carouselbtn">VIEW COURSES</button>
+          </div>
+        </div>
+        <div class="carousel-item "  data-bs-interval="3000" >
+          <img src="./lumimg/caroucel1.jpg" class="d-block w-100" alt="..."   id="caroimg">
+          <div class="carousel-caption d-none d-md-block"  style="text-align: left;">
+<h1>
+              <p   style="font-size: 65px;">DATA Science,ML & AI <br> Big Data - Hadoop & Spark  <br> Python Data Science</p>
+
+</h1>             <br><br>
+            <p>We LUMINAR TECHNOLAB  offers best software training and placement in  <br> emerging technology like Big DATA,Hadoop,Spark,Data science,Machine  <br> learning,Deep Learning and AI </p>
+            <br><br>
+               <button id="carouselbtn">VIEW COURSES</button>
+          </div>
+        </div>
+       
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent"   style="padding-left: 392px;"    >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
 
+    
+    </div>
 
+    <!-- MODEL BOX -->
 
-
-            <li class="nav-item    ">
-                <HOME class="nav-link text-dark "      href="#" > <button>HOME</button> </a>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link  text-dark " aria-current="page" href="#"><button>ABOUT</button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  text-dark  " href="#"><button>COURSES</button></a>
-          </li>
+    <!-- Button trigger modal -->
+ <div >
+  <div >
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 50px;">
+      VIEW COURSES
+    </button>
+  </div>
+  
+  <!-- Modal -->             
+  
+  
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div >
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"  ></button>
+          </div>
+    
+           
           
-          <li class="nav-item">
-            <a class="nav-link text-dark " href="#"><button id="btorplmts">OUR PLACEMENTS</button></a>
-          </li>
-      <li class="nav-item">
-        <a class="nav-link   text-dark " aria-current="page" href="#"><button>GALLERY</button></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link  text-dark" href="#"><button>CONTACTS</button></a>
-      </li>
-          
-        
-        </ul>
-        
+          <div class="modal-body">
+            <div class="container">
+               <form action="">
+                <h4>Get Training Quote for free</h4>
+                <input type="text"  placeholder="Name" style="border:none ; ">
+                <hr>
+                <input type="email" name="" id="" placeholder="Email"  style="border:none ;">
+                <hr>
+                <select name="" id="" style="border:none ;" >
+                  <option value="">Select Courses interested in</option>
+                  <option value="">MEARN Stack</option>
+                  <option value="">PYTHON</option>
+                  <option value="">BIG DATA</option>
+              </select><br>
+              <input type="text"  placeholder="City" style="border:none ;">
+              <hr>
+              <textarea name="" id="" cols="30" rows="10"  placeholder="Comments"  style="border:none ;" ></textarea>
+              <hr>
+             <button  style="background-color: #461870;">SUBMIT QUERY</button>
+               </form>
+    
+    
+    
+    
+    
+    
+    
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
       </div>
     </div>
-  </nav>
+  
+  </div>  
+  </div>
+
+
+
+  <div class=" container" >
+    <div class="row ">
+  
+      <div class="col-lg-6 col-md-12 col-sm-12  p-5"  >
+        <h2    style="color: #480e7e;  ">Luminar Technolab Pvt Ltd</h2>
+        <p style="color: #a281c1;">CIN: U80220KL2021PTC071578</p>
+        <p>Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing advanced level software training to Students and by helping them to get placed in IT companies. We are a team of IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s career foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python Training, Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to match with the current industry requirements. Our Vision is to provide 100% placements to students those who enroll with us for our specialized courses.
+  
+        </p>
+        <br><br>
+        <button id="learnmore"><strong>LEARN MORE</strong></button>
+  
+  
+  
+  
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  " >
+        <img src="./lumimg/qq.jpg"  class="cumimg w-75 "  alt=""   >
+  
+  
+      </div>
+  
+  
+  
+    </div>
+  </div>
+  
+
+
+<div  style=" text-align: center; font-size: 100px; padding-top: 40px; padding-bottom: 9px; background-color:  white; "><h1>
+  <span style="color: #330a5a;">OUR </span>
+  <span style="color: #9d79c1;">COURSES</span></h1></div>
+
+
+
+
+  
+
+
+
+  
+
+  <!-- <div class="row">
     
-</body>
+    
+      <div   class=" col-lg-6 col-md-6 col-sm-12   "    >
+      <img id="img4" src="./lumimg/img4.jpg" alt="">
+        </div>
+
+
+      <div  class=" col-lg-6 col-md-6 col-sm-12   "   >
+  
+        <h4  style="color: #421071; padding-top: 45px;">DATA SCIENCE - ML - AI - BIG DATA WITH CLOUD & TABLEAU</h4>
+        <p>Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics, Probability Concepts, Machine Learning, Deep Learning, Data Science, Artificial Intelligence, Tableau, AWS Cloud.</p>
+        <h6> 📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)</h6> <br>
+        <h6>⏰  Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day </h6> <br>
+        <h6> 🧑‍🏫 Course Fees:  <a href=""   style="color: #421071;">VIEW MORE</a></h6>
+  
+      
+      
+      </div>
+    
+   
+
+    
+
+  </div> 
+  
+</div>  -->
+
+
+<div class="  container "  id="boxshadow1">
+  <div class="row "  >
+  
+    <div  class="col-lg-6 col-md-12 col-sm-12  ">
+
+      <img src="./lumimg/img4.jpg" class="w-100 cumimg"  alt="">
+  
+    </div>
+  
+    <div   class="col-lg-6 col-md-12 col-sm-12">
+  
+      <h4  style="color: #421071; padding-top: 45px;">DATA SCIENCE - ML - AI - BIG DATA WITH CLOUD & TABLEAU</h4>
+      <p>Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics, Probability Concepts, Machine Learning, Deep Learning, Data Science, Artificial Intelligence, Tableau, AWS Cloud.</p>
+      <h6> 📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)</h6> <br>
+      <h6>⏰  Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day </h6> <br>
+      <h6> 🧑‍🏫 Course Fees:  <a href=""   style="color: #421071;">VIEW MORE</a></h6>
+  
+    </div>
+  
+    
+  
+  </div>
+
+</div> 
+   
+
+
+
+
+
+
+<div   class="mt-5 container  " style="padding-left: 50px;" >
+  
+    
+      <div class="row">
+    
+    
+        <div class="col-lg-4 col-md-12 col-sm-12"  id="pythonStMs">
+    
+          <img src="./lumimg/python-1588143191.jpg"  class="cumimg  w-100" alt=""   > <br><br> <br>
+          <h4  style="color: #480c80; "> Python Django - Angular - Full <br>Stack Web Development Expert </h4> <br>
+          <p>Core Python, Basics of Programming, Unix Commands, Advanced Python, Django Framework, REST API, Git, Angul...</p>
+
+          <br>
+          <button id="pytsmsbtn">VIEW MORE</button>
+
+    
+      
+      </div>
+        <div class="col-lg-4 col-md-12 col-sm-12" id="pythonStMs"> 
+          <img src="./lumimg/st-1588580359.jpg" class="cumimg w-100" alt=""> <br><br><br>
+          <h4  style="color: #480c80; ">Software Testing Specialist</h4> <br>
+          <p>Manual Testing,Java foundations,Mobile <br> Testing,Selenium IDE,Selenium Web drive, <br> Selenium Advanced Web...</p>
+           <br>
+          <button id="pytsmsbtn">VIEW MORE</button>
+                </div>
+
+
+
+        <div class="col-lg-4 col-md-12 col-sm-12" id="pythonStMs"> 
+          <img src="./lumimg/ms-1623825586.jpg" class="cuming w-100" alt=""><br><br><br>
+          <h4  style="color: #480c80; ">MEARN Stack Web Development <br> Expert - Angular & React </h4> <br>
+
+          <p>HTML,CSS,Javascript,Bootstrap,Git, <br> Typescript,MongoDB,MysQL,Express.js,<br>Angular,React.js,Node...</p>
+          <br>
+          <button id="pytsmsbtn">VIEW MORE</button>
+    
+        </div>
+    
+    
+    
+    
+      </div>
+</div>
+  
+<button  id="vwalcors">View all Courses</button>
+  
+  
+  
+
+
+
+
+
+
+
+
+ 
+  </body>
 </html>
